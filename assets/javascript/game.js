@@ -27,9 +27,10 @@ var check = 0;
 
 updateFacts = function(){
     document.getElementById("funFact").innerText = content[currentWordIndex];
-    document.getElementById("guessedWord").innerText = "You correctly guessed " + wordList[currentWordIndex - 1]+ " !!";
     document.getElementById("imgChange").src = image[currentWordIndex];
+    document.getElementById("guessedWord").innerText = "You correctly guessed " + wordList[currentWordIndex - 1]+ " !!";
 }
+
 
 
 startGame = function () {
@@ -107,6 +108,8 @@ document.onkeydown = function (event) {
         currentWordIndex = 0;
         check = 1;
         updateFacts();
+        document.getElementById("guessedWord").innerText = "See if you can do better this time!";
+
         startGame();
     }
 
