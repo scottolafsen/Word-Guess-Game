@@ -109,12 +109,8 @@ document.onkeydown = function (event) {
         check = 1;
         updateFacts();
         document.getElementById("guessedWord").innerText = "See if you can do better this time!";
-
         startGame();
     }
-
-
-    console.log(check)
 }
 
 
