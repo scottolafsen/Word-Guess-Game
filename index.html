@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+    <title>Word Guess Maine!</title>
+</head>
+
+<body style="background: lightgrey";>
+    <div class="jumbotron"  style="background-image: url(assets/images/pano4.JPG); background-size: 100% 100%;">
+        <div class="container">
+            <h1 class="text-center">Word Guess State of Maine Edition!</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="text-center">Guess the words to reveal fun facts about the pine tree state</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-white bg-dark mb-3" style="max-width: 36rem;">
+                    <img class="card-img-top" id="imgChange" src = "https://scontent-sjc3-1.xx.fbcdn.net/v/t31.0-8/13340264_10103062310307449_6168287561361947892_o.jpg?_nc_cat=100&_nc_ht=scontent-sjc3-1.xx&oh=2166d260fe6ec50e5110f9f9210240a0&oe=5C85FBA5" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 id="guessedWord"></h4>
+                        <p class="card-text" id="funFact">Maine is the 12th smallest by area, the 9th least populous, and the 38th most densely populated of the 50 U.S. states. It is bordered by New Hampshire to the west, the Atlantic Ocean to the southeast, and the Canadian provinces of New Brunswick and Quebec to the northeast and northwest respectively. Maine is the easternmost state in the contiguous United States, and the northernmost east of the Great Lakes. It is known for its jagged, rocky coastline; low, rolling mountains; heavily forested interior; and picturesque waterways, as well as its seafood cuisine, especially lobster and clams. There is a humid continental climate throughout the state, even in coastal areas such as its most populous city of Portland. The capital is Augusta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-white bg-dark mb-3" style="max-width: 36rem;">
+                    <div class="card-body">
+                        <h3>press any key to start</h3>
+                        <h4 id="wins">WINS:</h4>
+                        <h4>Current Word</h4>
+                        <h4 id="currentWord">_________</h4>
+                        <h5 id="guessesRemaining">Guesses Remaining</h5>
+                        <h4>Letters Guessed</h4>
+                        <h5 id="guessedLetters">__________</h5>
+
+                    </div>
+                    <img class="card-img-bottom" src="https://www.nationsonline.org/maps/USA/Maine-topographic-map.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron"  style="background-image: url(assets/images/pano4.JPG); background-size: 100% 100%;">
+            <div class="container">
+                <h1 class="display-4"></h1>
+                <p class="lead"></p>
+            </div>
+            <nav class="navbar fixed-bottom navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Copyright 2018 Scott Olafsen</a>
+                </nav>
+            
+</body>
+
+</html>
